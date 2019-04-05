@@ -2,9 +2,10 @@
   "name": "HotRestaurant",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "logic.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node logic.js"
   },
   "repository": {
     "type": "git",
