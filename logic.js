@@ -99,3 +99,17 @@ let waitList = [
           });
   
       });
+
+      $("#view-tables").on("click", function(event){
+          event.preventDefault();
+            let redirect = window.location.href + "/api/reservations";
+            alert(redirect);
+            document.location.href = redirect;
+      })
+
+      $("#reserve-seats").on("click", function(event){
+        event.preventDefault();
+        //   let redirect = window.location.href + "/api/reservations";
+        //   alert(redirect);
+          document.location.href = redirect; //here redirect should be the form html url
+    })
