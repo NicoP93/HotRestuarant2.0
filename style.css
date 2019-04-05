@@ -3,13 +3,26 @@ body{
 }
 
 .main-block{
-    line-height:1.2em;
+    line-height:1.5em;
     width:80%;
     margin:0 auto;
     color:rgb(243, 208, 119);
     background:rgb(30, 19, 15);
     padding:15px;
     border:rgb(83, 70, 55) solid 2px;
+    border-radius:4px;
+}
+
+.main-block hr{
+    border-bottom:none;
+    border-color:rgba(243, 208, 119, .5);
+    width:90%;
+    margin-top:0;
+}
+
+.main-block span{
+    width:100%;
+    margin:0 auto;
 }
 
 .main-block h1{
@@ -18,15 +31,19 @@ body{
 
 .main-block h3{
     font-size:30px;
+    margin-bottom:10px;
 }
 
 .main-block button{
     border:none;
-    padding:15px;
+    padding:10px;
     margin-right:15px;
     font-size:18px;
+    
 }
 
 #view-tables{
-    background:green;
+    background:rgb(30, 19, 15);
+    color:rgb(243, 208, 119);
+    border:rgb(83, 70, 55) solid 2px;
 }
