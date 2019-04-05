@@ -1,5 +1,7 @@
 body{
     background:rgb(47, 39, 29);
+    width:90%;
+    margin:0 auto;
 }
 
 .main-block{
@@ -18,11 +20,6 @@ body{
     border-color:rgba(243, 208, 119, .5);
     width:90%;
     margin-top:0;
-}
-
-.main-block span{
-    width:100%;
-    margin:0 auto;
 }
 
 .main-block h1{
@@ -46,4 +43,15 @@ body{
     background:rgb(30, 19, 15);
     color:rgb(243, 208, 119);
     border:rgb(83, 70, 55) solid 2px;
+}
+
+#reserve-seats{
+    background:rgb(30, 19, 15);
+    color:rgb(243, 208, 119);
+    border:rgb(83, 70, 55) solid 2px;
+}
+
+form{
+    width:100%;
+    margin:0 auto;
 }
