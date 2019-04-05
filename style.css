@@ -1,3 +1,57 @@
 body{
-    background:rgb(47, 43, 29);
+    background:rgb(47, 39, 29);
+    width:90%;
+    margin:0 auto;
+}
+
+.main-block{
+    line-height:1.5em;
+    width:80%;
+    margin:0 auto;
+    color:rgb(243, 208, 119);
+    background:rgb(30, 19, 15);
+    padding:15px;
+    border:rgb(83, 70, 55) solid 2px;
+    border-radius:4px;
+}
+
+.main-block hr{
+    border-bottom:none;
+    border-color:rgba(243, 208, 119, .5);
+    width:90%;
+    margin-top:0;
+}
+
+.main-block h1{
+    font-size:36px;
+}
+
+.main-block h3{
+    font-size:30px;
+    margin-bottom:10px;
+}
+
+.main-block button{
+    border:none;
+    padding:10px;
+    margin-right:15px;
+    font-size:18px;
+    
+}
+
+#view-tables{
+    background:rgb(30, 19, 15);
+    color:rgb(243, 208, 119);
+    border:rgb(83, 70, 55) solid 2px;
+}
+
+#reserve-seats{
+    background:rgb(30, 19, 15);
+    color:rgb(243, 208, 119);
+    border:rgb(83, 70, 55) solid 2px;
+}
+
+form{
+    width:100%;
+    margin:0 auto;
 }
