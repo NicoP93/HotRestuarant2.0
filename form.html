@@ -38,10 +38,29 @@
             <input type="text" id="id" value="">
             <br>
             <br>
-            <input type="submit" value="Submit">
+            <input id="submit-btn" type="submit" value="Submit">
         </form>
     </div>
+<script>
 
+      $("#submit-btn").on("click", function(event) {
+        event.preventDefault();
+  
+        var newReservation = {
+          name: $("#name").val().trim(),
+          phoneNumber: $("#phone-number").val().trim(),
+          email: $("#email").val().trim(),
+          id: $("#id").val().trim()
+        };
+  
+        $.post("/api/reservations", newReservation)
+          .then(function(data) {
+            console.log(data);
+            alert("Adding new reservation...");
+          });
+  
+      });
+    </script>
 </body>
 
 </html>

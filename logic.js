@@ -38,7 +38,7 @@ let waitList = [
     res.sendFile(path.join(__dirname, "index.html"));
   });
   
-  app.get("/add", function(req, res) {
+  app.get("/form", function(req, res) {
     res.sendFile(path.join(__dirname, "form.html"));
   });
   
@@ -80,48 +80,3 @@ let waitList = [
     console.log("App listening on PORT " + PORT);
   });
   
-      // Question: What does this code do?
-    //   $("#submit-btn").on("click", function(event) {
-    //     event.preventDefault();
-  
-    //     var newReservation = {
-    //       name: $("#name").val().trim(),
-    //       phoneNumber: $("#phone-number").val().trim(),
-    //       email: $("#email").val().trim(),
-    //       id: $("#id").val().trim()
-    //     };
-  
-    //     // Question: What does this code do??
-    //     $.post("/api/reservations", newReservation)
-    //       .then(function(data) {
-    //         console.log(data);
-    //         alert("Adding new reservation...");
-    //       });
-  
-    //   });
-
-    //   $("#view-tables").on("click", function(event){
-    //       event.preventDefault();
-    //         let redirect = window.location.href + "/api/reservations";
-    //         alert(redirect);
-    //         document.location.href = redirect;
-
-    //         $.get("/api/reservations", newReservation)
-    //       .then(function(data) {
-    //         console.log(data);
-    //         alert("Showing reservations...");
-    //       });
-    //   })
-
-    //   $("#reserve-seats").on("click", function(event){
-    //     event.preventDefault();
-    //     //   let redirect = window.location.href + "/api/reservations";
-    //     //   alert(redirect);
-    //       document.location.href = redirect; //here redirect should be the form html url
-
-    //       $.get("/api/waitList", newReservation)
-    //       .then(function(data) {
-    //         console.log(data);
-    //         alert("Showing reservations...");
-    //       });
-    // })

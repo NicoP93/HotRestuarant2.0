@@ -17,7 +17,37 @@
         <hr>
         <span><button id = "view-tables">View Available Seating</button><button id = "reserve-seats">Reserve Seating!</button></span>
     </div>
-    
+    <script>
+          $("#view-tables").on("click", function(event){
+          event.preventDefault();
+            let redirect = window.location.href + "api/reservations";
+            alert(redirect);
+            document.location.href = redirect;
+
+            $.get("/api/reservations", newReservation)
+          .then(function(data) {
+            console.log(data);
+            alert("Showing reservations...");
+          });
+      });
+
+      $("#reserve-seats").on("click", function(event){
+          event.preventDefault();
+            let redirect = window.location.href + "api/waitList";
+            alert(redirect);
+            document.location.href = redirect;
+
+            app.get("/form", function(req, res) {
+                res.sendFile(path.join(__dirname, "form.html"));
+                });
+
+        //     $.get("/api/waitList", newReservation)
+        //   .then(function(data) {
+        //     console.log(data);
+        //     alert("Showing waitList...");
+          });
+      });
+    </script>
 </body>
 
 </html>
